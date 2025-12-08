@@ -1,0 +1,159 @@
+/* Color Palette */
+:root {
+  --light-pink-1: #ffe5ec;
+  --light-pink-2: #ffc2d1;
+  --light-pink-3: #ffb3c6;
+  --medium-pink: #ff8fab;
+  --dark-pink: #fb6f92;
+}
+
+/* Main body styles */
+body {
+  max-width: 1300px;
+  background-color: var(--light-pink-1);
+  color: var(--dark-pink);
+}
+
+/* Image styles */
+img {
+  width: 100%;
+}
+
+img[alt="Person"] {
+  width: 50%;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+/* Container sections */
+.w3-half {
+  width: 50%;
+}
+
+/* Specific class styles */
+.eugenio,
+.pirata,
+.shore {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0;
+}
+
+.eugenio .w3-half,
+.pirata .w3-half,
+.shore .w3-half {
+  width: 50%;
+  overflow: hidden;
+}
+
+.eugenio .w3-half img,
+.pirata .w3-half img,
+.shore .w3-half img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.pirata .star.wars,
+.shore .tamales {
+  width: 50%;
+  overflow: hidden;
+}
+
+.pirata .star.wars img,
+.shore .tamales img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+table tr {
+  border-bottom: 1px solid var(--light-pink-2);
+}
+
+table th {
+  background-color: var(--dark-pink);
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+table td {
+  padding: 12px;
+  color: var(--dark-pink);
+}
+
+/* Form styles */
+form {
+  width: 100%;
+  background-color: white !important;
+}
+
+form input {
+  margin-bottom: 1rem;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid var(--light-pink-2);
+  border-radius: 4px;
+  color: var(--dark-pink);
+}
+
+form input:focus {
+  outline: none;
+  border-color: var(--dark-pink);
+  background-color: var(--light-pink-1);
+}
+
+/* Section background colors */
+.w3-black {
+  background-color: var(--dark-pink) !important;
+}
+
+.w3-blue-grey {
+  background-color: var(--light-pink-2) !important;
+}
+
+.w3-light-grey {
+  background-color: var(--light-pink-1) !important;
+}
+
+.w3-indigo {
+  background-color: var(--light-pink-3) !important;
+}
+
+.w3-dark-grey {
+  background-color: var(--medium-pink) !important;
+}
+
+.w3-teal {
+  background-color: var(--light-pink-2) !important;
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+  .w3-half {
+    width: 100%;
+  }
+  
+  .eugenio .w3-half,
+  .pirata .w3-half,
+  .shore .w3-half {
+    width: 100%;
+  }
+  
+  .pirata .star.wars,
+  .shore .tamales {
+    width: 100%;
+  }
+}
